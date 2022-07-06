@@ -28,9 +28,8 @@ class ActiveBasket:
                     #raise ValueError("custom")
 					
 					#count of fruit
-                    print('Total number of fruit:')
-                    print(len(data))
-                    print()
+                    print('\nTotal number of fruit:')
+                    print(str(len(data)) +'\n \n')
                     #filetowrite.write(data.to_string() +'\n')
                     filetowrite.write('Total number of fruit:' + '\n')
                     filetowrite.write(str(len(data)) + '\n \n')
@@ -39,8 +38,7 @@ class ActiveBasket:
 					#count of fruit types
                     print('Total types of fruit:')
                     byType = data.groupby('fruit-type')
-                    print(len(byType))
-                    print()
+                    print(str(len(byType)) +'\n \n')
                     filetowrite.write('Total types of fruit:' + '\n')
                     filetowrite.write(str(len(byType)) + '\n \n')
 
@@ -49,28 +47,25 @@ class ActiveBasket:
                     print('Oldest fruit & age:')
                     oldestNum = data[['age-in-days']].max(numeric_only=True)
                     oldest = data.loc[data['age-in-days'] == int(oldestNum)]
-                    print(oldest)
-                    print()
+                    print(oldest.to_string(index=False) +'\n \n')
                     filetowrite.write('Oldest fruit & age:' + '\n')
-                    filetowrite.write(str(oldest) + '\n \n')
+                    filetowrite.write(oldest.to_string(index=False) + '\n \n')
 					
 					
                     #the number of each type of fruit in decending order (fruit then count)
 					
                     print('The number of each type of fruit in descending order:')
                     byTypeCount = data.groupby(['fruit-type'])['fruit-type'].count().reset_index(name='count').sort_values(['count'], ascending=False)
-                    print(byTypeCount)
-                    print()
+                    print(byTypeCount.to_string(index=False) +'\n \n')
                     filetowrite.write('The number of each type of fruit in descending order:' + '\n')
-                    filetowrite.write(str(byTypeCount) +'\n \n')
+                    filetowrite.write(byTypeCount.to_string(index=False) +'\n \n')
 
 					#the various charactersticts of each fruit by type 
                     print('The various characteristics (count, color, shape, etc.) of each fruit by type:')
                     byTypeAndChar = data.groupby(['fruit-type', 'characteristic1', 'characteristic2'])['fruit-type'].count().reset_index(name='count').sort_values(['count'], ascending=False)
-                    print(byTypeAndChar)
-                    print()
+                    print(byTypeAndChar.to_string(index=False) + '\n \n')
                     filetowrite.write('The various characteristics (count, color, shape, etc.) of each fruit by type:' + '\n')
-                    filetowrite.write(str(byTypeAndChar) + '\n \n')
+                    filetowrite.write(byTypeAndChar.to_string(index=False) + '\n \n')
 					
 					
                     filetowrite.close()					

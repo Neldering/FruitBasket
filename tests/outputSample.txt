@@ -5,29 +5,29 @@ Total types of fruit:
 5
  
 Oldest fruit & age:
-   fruit-type  age-in-days characteristic1 characteristic2
-8   pineapple            6         prickly           sweet
-18     orange            6           round           sweet
+fruit-type  age-in-days characteristic1 characteristic2
+ pineapple            6         prickly           sweet
+    orange            6           round           sweet
  
 The number of each type of fruit in descending order:
-   fruit-type  count
-2      orange      6
-0       apple      5
-1  grapefruit      4
-3   pineapple      4
-4  watermelon      3
+fruit-type  count
+    orange      6
+     apple      5
+grapefruit      4
+ pineapple      4
+watermelon      3
  
 The various characteristics (count, color, shape, etc.) of each fruit by type:
-    fruit-type characteristic1 characteristic2  count
-5       orange           round           sweet      5
-1        apple             red           sweet      3
-3   grapefruit          bitter          yellow      2
-4   grapefruit          yellow          bitter      2
-7    pineapple         prickly           sweet      2
-8    pineapple           sweet         prickly      2
-10  watermelon           heavy           green      2
-0        apple           green            tart      1
-2        apple          yellow           sweet      1
-6       orange           sweet           round      1
-9   watermelon           green           heavy      1
+fruit-type characteristic1 characteristic2  count
+    orange           round           sweet      5
+     apple             red           sweet      3
+grapefruit          bitter          yellow      2
+grapefruit          yellow          bitter      2
+ pineapple         prickly           sweet      2
+ pineapple           sweet         prickly      2
+watermelon           heavy           green      2
+     apple           green            tart      1
+     apple          yellow           sweet      1
+    orange           sweet           round      1
+watermelon           green           heavy      1
  
