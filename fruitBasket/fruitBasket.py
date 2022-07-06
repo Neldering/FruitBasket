@@ -47,6 +47,7 @@ class ActiveBasket:
                     print('Oldest fruit & age:')
                     oldestNum = data[['age-in-days']].max(numeric_only=True)
                     oldest = data.loc[data['age-in-days'] == int(oldestNum)]
+                    oldest = oldest.drop('characteristic1', axis=1).drop('characteristic2', axis=1)
                     print(oldest.to_string(index=False) +'\n \n')
                     filetowrite.write('Oldest fruit & age:' + '\n')
                     filetowrite.write(oldest.to_string(index=False) + '\n \n')
