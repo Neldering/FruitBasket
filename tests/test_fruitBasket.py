@@ -25,5 +25,8 @@ def test_badColumns(monkeypatch):
 def test_happyPath(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: "fruitBasket.csv")
     fruitBasket.ActiveBasket.process()
-    result = filecmp.cmp('output.txt', 'tests/outputSample.txt', shallow=False)
-    assert(result)    
+    try:
+        result = open('output.txt', 'r').read() == open('tests/outputSample.txt').read()
+        assert(result)
+    except Exception as ex:
+        assert(False)

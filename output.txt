@@ -1,0 +1,33 @@
+Total number of fruit:
+22
+ 
+Total types of fruit:
+5
+ 
+Oldest fruit & age:
+fruit-type  age-in-days
+ pineapple            6
+    orange            6
+ 
+The number of each type of fruit in descending order:
+fruit-type  count
+    orange      6
+     apple      5
+grapefruit      4
+ pineapple      4
+watermelon      3
+ 
+The various characteristics (count, color, shape, etc.) of each fruit by type:
+fruit-type characteristic1 characteristic2  count
+    orange           round           sweet      5
+     apple             red           sweet      3
+grapefruit          bitter          yellow      2
+grapefruit          yellow          bitter      2
+ pineapple         prickly           sweet      2
+ pineapple           sweet         prickly      2
+watermelon           heavy           green      2
+     apple           green            tart      1
+     apple          yellow           sweet      1
+    orange           sweet           round      1
+watermelon           green           heavy      1
+ 
