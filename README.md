@@ -32,7 +32,6 @@ Python3
 pip
 
 
-
 TO RUN
 using command line go to frutibasket folder
 in fruitbasket folder you can run:
