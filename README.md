@@ -3,8 +3,8 @@ Hello This is the fruitbasket application
 it takes a csv file using the following headers (example of csv provided via fruitBasket.csv):
 
 fruit-type,age-in-days,characteristic1,characteristic2
-apple,1,red,sweet
 
+apple,1,red,sweet
 
 
 
